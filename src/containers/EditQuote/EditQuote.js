@@ -52,7 +52,7 @@ const EditQuote = props => {
     };
 
     const cancel = () =>{
-        props.history.replace('/quotes/categories/all/');
+        props.history.replace('/quotes/categories/all/' + props.match.params.id);
     };
 
 
