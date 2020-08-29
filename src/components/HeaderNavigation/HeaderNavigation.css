@@ -1,0 +1,29 @@
+header{
+    background: var(--lighter-blue);
+    color: white;
+    padding: 30px 0;
+    margin-bottom: 20px;
+}
+
+.header-nav{
+    margin: 0;
+    padding: 0;
+}
+
+.header-ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header-li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 100px;
+}
+
+.header-ul a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
