@@ -1,0 +1,45 @@
+.add-quote-page{
+    height: 80vh;
+    margin: 5% 0 0 0;
+}
+
+.add-quote-select{
+    width: 20%;
+    display: block;
+}
+
+.add-quote-inputs{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    color: white;
+    background: var(--darker-blue);
+    border: 1px solid var(--lighter-blue);
+}
+
+.add-quote-select{
+    color: white;
+}
+
+.author-input{
+    width: 20%;
+}
+
+.quote-input{
+    resize: none;
+    height: 300px;
+    width: 600px;
+    word-break: break-all;
+}
+
+.add-quote-inputs::placeholder{
+    color: white;
+}
+
+.add-btn{
+    color: white;
+    border: 1px solid var(--lighter-blue);
+    background: var(--darker-blue);
+    padding: 10px 15px;
+    text-transform: uppercase;
+}

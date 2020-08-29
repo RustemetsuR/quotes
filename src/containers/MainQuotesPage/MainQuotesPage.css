@@ -1,0 +1,33 @@
+.main-quotes{
+    position: relative;
+    background: var(--darker-blue);
+}
+
+.category-list-box{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+.category-list{
+    margin: 0;
+    padding: 0;
+}
+
+.category-list-item{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid teal;
+}
+
+.category-list-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.quotes-list{
+    display: flex;
+    flex-direction: column-reverse;
+}
