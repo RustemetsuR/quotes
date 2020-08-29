@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import MainQuotesPage from './containers/MainQuotesPage/MainQuotesPage';
+import HeaderNavigation from './components/HeaderNavigation/HeaderNavigation';
+import AddQuote from './containers/AddQuote/AddQuote';
+import CategoryQuotePage from './containers/CategoryQuotePage/CategoryQuotePage';
+import EditQuote from './containers/EditQuote/EditQuote';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <HeaderNavigation />
+        <Switch>
+          <Route path="/quotes/addNewQuote/" component={AddQuote} />
+          <Route path="/quotes/categories/all/:id/:fireBaseId/edit/" component={EditQuote} />
+          <Route path="/quotes/categories/all/:id/" component={CategoryQuotePage} />
+          <Route path="/quotes/categories/all/" exact component={MainQuotesPage} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
